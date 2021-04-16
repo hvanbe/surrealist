@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Norican&display=swap');
+html,body{
+  height:100%;
+  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.dailysciencejournal.com/wp-content/uploads/2019/09/Clouds-Movement.gif);
+  background-color: #0d1921;
+}
+
+#background {
+position: fixed;
+top: 50%;
+left: 50%;
+min-width: 100%;
+min-height: 100%;
+width: auto;
+height: auto;
+z-index: -100;
+-webkit-transform: translateX(-50%) translateY(-50%);
+transform: translateX(-50%) translateY(-50%);
+background: image-url('bg.png') no-repeat;
+background-size: cover;
+}
+
+medium {
+  color: white;
+  font-size: 18px;
+  font-family: 'Norican', cursive;
+}
+
+.container4 {
+  text-align: center;
+  position: relative;
+}
+
+.image3 {
+  width: 230px;
+  z-index: 1;
+}
+
+.container5 {
+  padding-top: 140px;
+  justify-self: bottom;
+  text-align: center;
+  position: relative;
+}
+
+.image2 {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.banner {
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  background-image: linear-gradient(#0d1921, #1663a0);
+  // background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://thumbs.gfycat.com/EmotionalOnlyGoldfinch-size_restricted.gif);
+}
+
+p {
+  z-index: 1;
+  color: #fff;
+  font-family: Avenir Next, Helvetica Neue, Helvetica, Tahoma, sans-serif;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  padding-top: 470px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  user-select: none;
+}
+
+p span {
+  display: inline-block;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 500;
+          perspective: 500;
+  -webkit-font-smoothing: antialiased;
+}
+p span::before,
+p span::after {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+  content: attr(data-text);
+}
+p span::before {
+  z-index: 1;
+  color: rgba(0,0,0,0.2);
+  -webkit-transform: scale(1.1, 1) skew(0deg, 20deg);
+          transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+p span::after {
+  z-index: 2;
+  color: #0f1a22;
+  text-shadow: -1px 0 1px #6290C3, 1px 0 1px rgba(0,0,0,0.6);
+  -webkit-transform: rotateY(-40deg);
+          transform: rotateY(-40deg);
+}
+p span:hover::before {
+  -webkit-transform: scale(1.1, 1) skew(0deg, 5deg);
+          transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+p span:hover::after {
+  -webkit-transform: rotateY(-10deg);
+          transform: rotateY(-10deg);
+}
+p span + span {
+  margin-left: 0.001em;
+}
+
+p span::before,
+  p span::after {
+    display: block;
+  }
+
+@media (min-width: 70em) {
+  p {
+    font-size: 5em;
+  }
+  h3 {
+    font-size: 3em;
+  }
+}
+
+@media (max-width: 30em) {
+  p {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1em;
+  }
+}
+

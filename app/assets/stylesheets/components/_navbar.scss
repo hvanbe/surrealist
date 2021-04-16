@@ -1,0 +1,25 @@
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+  .navbar-lewagon {
+    justify-content: space-between;
+    background: rgb(14,14,14);
+    color: white;
+    box-shadow: 0 1px 20px -10px white;
+    background: var(--c-light);
+      -webkit-transition: .35s background;
+      -o-transition: .35s background;
+      transition: .35s background;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+a {
+  font-family: 'Norican', cursive;
+}
