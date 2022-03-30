@@ -6,6 +6,48 @@ h1 {
 }
 
 .container3 {
-  padding-top: 150px;
   text-align: center;
+  padding: 120px;
+  background-image: linear-gradient(#0d1921, #1663a0);
+}
+
+@media (min-width: 70em) {
+  .container3 {
+    padding-right: 300px;
+    padding-left: 300px;
+  }
+}
+
+.image5 {
+  width: 100px;
+  z-index: 1;
+  animation-duration: 20s;
+}
+
+.image6 {
+  width: 500px;
+  padding-bottom: 20px
+
+}
+
+.image7 {
+  padding-top: 500px;
+}
+
+table {
+  position: relative;
+  text-align: center;
+
+}
+
+td {
+  color: white;
+  font-size: 18px;
+  font-family: 'Norican', cursive;
+}
+
+th {
+  color: white;
+  font-size: 18px;
+  font-family: 'Norican';
 }
