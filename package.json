@@ -1,6 +1,7 @@
 {
   "name": "surrealist",
   "private": true,
+  "start": "node index.js",
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/ujs": "^6.0.0",
